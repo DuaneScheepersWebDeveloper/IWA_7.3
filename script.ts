@@ -9,16 +9,20 @@ console.log(sum + " "+ typeof(sum));
 
 const nickname:string = "Timmy";
 const firstName:string = "Timothy";
+const something:string="Duane";
 
-
-if (nickname) {
+const checkName =(name)=>{
+if (name === nickname) {
   console.log(`Good morning, ${nickname}!`);
-} else if (firstName) {
+} else if (name===firstName) {
   console.log(`Good morning, ${firstName}!`);
 } else {
   console.log("Good morning!");
 }
-
+}
+checkName(nickname); //Good morning, Timmy!
+checkName(firstName); //Good morning, Timothy!
+checkName(something); //Good morning,
 //IMW_7.5:
 
 const leoName = 'Leo'
@@ -50,10 +54,6 @@ const leo = `${leoName} ${leoSurname.trim()} (Owed R${leosRevisedBalance1})`;
 const sarah = `${sarahName.trim()} ${sarahSurname} (Owed R${sarahRevisedBalance1})`;
 const total = "Total amount owed: "
 const newLine = "\n";
-console.log(leo);
-console.log(sarah);
-console.log(leosRevisedBalance2);
-console.log(sarahRevisedBalance2);
 
 const result = leo + newLine +sarah +newLine +divider + newLine+ total +owed+newLine+divider ; 
 console.log(result)

@@ -6,15 +6,21 @@ console.log(sum + " " + typeof (sum));
 //IMW_7.4:
 var nickname = "Timmy";
 var firstName = "Timothy";
-if (nickname) {
-    console.log("Good morning, ".concat(nickname, "!"));
-}
-else if (firstName) {
-    console.log("Good morning, ".concat(firstName, "!"));
-}
-else {
-    console.log("Good morning!");
-}
+var something = "Duane";
+var checkName = function (name) {
+    if (name === nickname) {
+        console.log("Good morning, ".concat(nickname, "!"));
+    }
+    else if (name === firstName) {
+        console.log("Good morning, ".concat(firstName, "!"));
+    }
+    else {
+        console.log("Good morning!");
+    }
+};
+checkName(nickname); //Good morning, Timmy!
+checkName(firstName); //Good morning, Timothy!
+checkName(something); //Good morning,
 //IMW_7.5:
 var leoName = 'Leo';
 var leoSurname = 'Musvaire     ';
@@ -39,10 +45,6 @@ var leo = "".concat(leoName, " ").concat(leoSurname.trim(), " (Owed R").concat(l
 var sarah = "".concat(sarahName.trim(), " ").concat(sarahSurname, " (Owed R").concat(sarahRevisedBalance1, ")");
 var total = "Total amount owed: ";
 var newLine = "\n";
-console.log(leo);
-console.log(sarah);
-console.log(leosRevisedBalance2);
-console.log(sarahRevisedBalance2);
 var result = leo + newLine + sarah + newLine + divider + newLine + total + owed + newLine + divider;
 console.log(result);
 //⁡⁢⁣⁢====================================================================⁡
